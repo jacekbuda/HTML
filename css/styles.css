@@ -59,4 +59,33 @@ main section#card ul li strong {
   margin-top: 10px;
   margin-left: 40px;
 }
+
+main section#primary {
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+main section#primary h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+main section#primary p {
+  font-size: 1.4em;
+}
+
+main section#primary a {
+  text-decoration: none;
+  color: rgba(16, 1, 36, 0.582);
+  border-radius: 15px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  background: #FFF6BB;
+  font-weight: bold;
+  padding: 15px;
+  margin: 35px auto 0 auto;
+}
 /*# sourceMappingURL=styles.css.map */

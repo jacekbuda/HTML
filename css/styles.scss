@@ -3,14 +3,15 @@ $colors: (
     primary: rgba(106, 5, 236, 0.582),
     accent: #FFF6BB,
     normal: rgb(255, 255, 255),
-    primary-light: lighten(rgba(106, 5, 236, 0.582), 40%)
+    primary-light: lighten(rgba(106, 5, 236, 0.582), 40%),
+    primary-dark: darken(rgba(106, 5, 236, 0.582,), 40%)
 );
 
 $padding: 15px;
 $borders: 15px;
 
 @function color($color-name) {
-    @return map-get($colors, $color-name)
+    @return map-get($colors, $color-name);
 }
 
 body, html {
@@ -74,6 +75,36 @@ main {
                     margin-left: max(40px);
                 }
             }
+        }
+    }
+
+    section#primary {
+        color: color(normal);
+        text-align: center;
+        padding: $padding;
+
+
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 1.4em;
+        }
+
+        a {
+            text-decoration: none;
+            color: color(primary-dark);
+            border-radius: $borders;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            background: color(accent);
+            font-weight: bold;
+            padding: $padding;
+            margin: 35px auto 0 auto;
         }
     }
 
