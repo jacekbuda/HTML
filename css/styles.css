@@ -1,0 +1,62 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Monsterrat';
+  margin: 0;
+}
+
+body #bg {
+  -webkit-clip-path: polygon(100% 0, 100% 70%, 48% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 70%, 48% 100%, 0 100%, 0 0);
+  background-color: rgba(106, 5, 236, 0.582);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+body header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 15px;
+  display: block;
+}
+
+main section#card {
+  background: white;
+  padding: 20px;
+  margin: 1em auto;
+  border-radius: 15px;
+  width: 80%;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+main section#card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main section#card ul li {
+  margin-bottom: 8px;
+}
+
+main section#card ul li span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(219, 191, 254, 0.582);
+  margin-right: 10px;
+}
+
+main section#card ul li strong {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+/*# sourceMappingURL=styles.css.map */
